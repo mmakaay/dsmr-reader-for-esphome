@@ -10,3 +10,5 @@ Resistor SMD 1k R3216 (R2,R3,R4)
 Resistor SMD 10k R3216 (R5)
 RJ12 SOCKET (SMARTMETER)
 Transistor 2N2222 TO92 (T1)
+
+For connecting the device to the smart meter, use a male-male RJ12 cable.
