@@ -1,0 +1,55 @@
+esphome:
+  name: smartmeter
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+api:
+  password: !secret api_password
+
+ota:
+  password: !secret ota_password
+
+logger:
+  # The baud_rate must be 0 to disable serial logging, so it won't conflict
+  # with the uart component.
+  baud_rate: 0
+  level: INFO
+
+uart:
+  rx_pin: GPIO3
+  baud_rate: 115200
+
+dsmr:
+
+# The following are the sensors that I use.
+# Look at the ESPHome documentation for the dsmr component for more options. 
+
+sensor:
+  - platform: dsmr
+    energy_delivered_tariff1:
+      name: Energy Consumed Tariff 1
+    energy_delivered_tariff2:
+      name: Energy Consumed Tariff 2
+    power_delivered:
+      name: Power Consumed
+    electricity_failures:
+      name: Electricity Failures
+    electricity_long_failures:
+      name: Electricity Long Failures
+    current_l1:
+      name: Current Phase 1
+    voltage_l1:
+      name: Voltage Phase 1
+    gas_delivered:
+      name: Gas Consumed
+
+text_sensor:
+  - platform: dsmr
+    identification:
+      name: "DSMR Identification"
+    p1_version:
+      name: "DSMR Versio
