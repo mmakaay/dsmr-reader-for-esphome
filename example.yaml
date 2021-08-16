@@ -14,13 +14,13 @@ ota:
   password: !secret ota_password
 
 logger:
-  # The baud_rate must be 0 to disable serial logging, so it won't conflict
-  # with the uart component.
-  baud_rate: 0
   level: INFO
-
+  
+# GPIO2 is not used, but I assign it here as the TX pin, so the
+# actual TX pin of the ESP-01 can still be used for serial logging.
 uart:
   rx_pin: GPIO3
+  tx_pin: GPIO2
   baud_rate: 115200
 
 dsmr:
