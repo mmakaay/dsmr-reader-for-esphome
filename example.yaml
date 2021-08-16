@@ -31,21 +31,21 @@ dsmr:
 sensor:
   - platform: dsmr
     energy_delivered_tariff1:
-      name: Energy Consumed Tariff 1
+      name: DSMR Energy Consumed Tariff 1
     energy_delivered_tariff2:
-      name: Energy Consumed Tariff 2
+      name: DSMR Energy Consumed Tariff 2
     power_delivered:
-      name: Power Consumed
+      name: DSMR Power Consumed
     electricity_failures:
-      name: Electricity Failures
+      name: DSMR Electricity Failures
     electricity_long_failures:
-      name: Electricity Long Failures
+      name: DSMR Electricity Long Failures
     current_l1:
-      name: Current Phase 1
+      name: DSMR Current Phase 1
     voltage_l1:
-      name: Voltage Phase 1
+      name: DSMR Voltage Phase 1
     gas_delivered:
-      name: Gas Consumed
+      name: DSMR Gas Consumed
 
 text_sensor:
   - platform: dsmr
