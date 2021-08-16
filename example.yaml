@@ -26,7 +26,10 @@ uart:
 dsmr:
 
 # The following are the sensors that I use.
-# Look at the ESPHome documentation for the dsmr component for more options. 
+# Look at the ESPHome documentation for the dsmr component for more options.
+#
+# Note: at the time of writing, the documentation was only available on
+# the beta site: https://beta.esphome.io/components/sensor/dsmr.html
 
 sensor:
   - platform: dsmr
