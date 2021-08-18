@@ -52,8 +52,6 @@ sensor:
       name: DSMR Electricity Long Failures
     current_l1:
       name: DSMR Current Phase 1
-    voltage_l1:
-      name: DSMR Voltage Phase 1
     gas_delivered:
       name: DSMR Gas Consumed
 
