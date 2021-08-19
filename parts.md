@@ -2,15 +2,15 @@
 
 ### For both DSMR v4 and v5
 
-Capacitor 4.7uF (C2,C3)
-Capacitor 10uF (C4,C6)
-3.3V regulator, SMD LM1117 (IC1)
-2x4 female header (for holding the MCU)
-ESP01 (MCU)
-Resistor SMD 1k R3216 (R2,R3,R4)
-Resistor SMD 10k R3216 (R5)
-RJ12 SOCKET (SMARTMETER)
-Transistor 2N2222 TO92 (T1)
+* Capacitor 4.7uF (C2,C3)
+* Capacitor 10uF (C4,C6)
+* 3.3V regulator, SMD LM1117 (IC1)
+* 2x4 female header (for holding the MCU)
+* ESP01 (MCU)
+* Resistor SMD 1k R3216 (R2,R3,R4)
+* Resistor SMD 10k R3216 (R5)
+* RJ12 SOCKET (SMARTMETER)
+* Transistor 2N2222 TO92 (T1)
 
 ### For DSMR v4
 
