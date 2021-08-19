@@ -8,7 +8,7 @@ The device is directly powered by the smart meter. This has been tested with a D
 
 I have a **DSMR v4.2** meter myself, which delivers enough current to power the ESP-01 MCU (100 mA). It does require a 1000 uF capacitor though, to handle the power peak of the ESP-01 during startup and connecting to the WiFi network. I soldered this capacitor at position C7. C1 is empty for me. You can also use two capacitors of around 500 uF and solder these at positions C1 and C7.
 
-A **DSMR v5** meter provides more power (250 mA) and can drive the ESP-01 MCU without additional capacitance. In fact, when using a 1000 uF capacitor, the ESP-01 got stuck in a reboot loop when connecting the device to the smart meter. The device did work with no capacitors at all at positions C1 and C7.
+A **DSMR v5** meter provides more power (250 mA) and can drive the ESP-01 MCU without additional capacitance. In fact, when using a 1000 uF capacitor, the ESP-01 got stuck in a reboot loop when connecting the device to the smart meter. The device does work with no capacitors at all at positions C1 and C7.
 
 Please let me know if you find additional compatibility outcomes.
 
