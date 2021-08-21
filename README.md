@@ -2,6 +2,8 @@
 
 An ESPHome smartmeter project (hardware + ESPHome config)
 
+![connected](connected_to_meter.png)
+
 # Compatibility
 
 The device is directly powered by the smart meter. This has been tested with a DSMR v4.2 a DSMR v5.0 meter.
