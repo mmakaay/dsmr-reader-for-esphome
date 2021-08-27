@@ -3,8 +3,6 @@
 An ESPHome smartmeter project (hardware + ESPHome config).
 This device is compatible with the energy dashboard that was introduced in Home Assistant 2021.8.0.
 
-![board](DSMR ESPHome_rev3.svg)
-
 ![connected](connected_to_meter.png)
 
 # Compatibility
