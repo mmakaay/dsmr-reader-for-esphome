@@ -1,5 +1,13 @@
 # Changelog
 
+## 2021-08-28
+
+* Changed the placement of the ESP-01, to bring the WiFi antenna to the outside of the board. Thanks to Frank Bakker on the ESPHome Discord for asking me why I hadn't done so. I had no answer to that :-)
+* Exposed all pins that are required for flashing to the breakout header (practically meaning: I added the RXD header), as requested by Frnk.
+* To make flashing easier, I added two jumpers that can be used for resetting and putting the ESP-01 into flash mode (i.e. connecting GPIO0 to GND).
+* Improved the routing of a 3.3V trace. Thanks to Azimath on the ESPHome Discord.
+* Fixed the use of the wrong voltage regulator (change LM1117 to AMS1117). Thanks to Azimath for the heads up.
+
 ## 2021-08-27
 
 * Use thermal isolation for the ground pads to make soldering easier. Thanks to Azimath on the ESPHome Discord.
