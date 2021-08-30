@@ -71,3 +71,7 @@ Here's what this one looked like:
 
 The circuit that I used as a starting point for my board:
 https://klushok.etv.tudelft.nl/projects/view?id=8
+
+This page had a good collection of info about the P1 port:
+http://domoticx.com/p1-poort-slimme-meter-hardware/
+
