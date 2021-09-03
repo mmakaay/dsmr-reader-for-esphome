@@ -5,6 +5,12 @@ This device is compatible with the energy dashboard that was introduced in Home 
 
 ![connected](connected_to_meter.png)
 
+# Files
+
+* [Schematic](PCB_DSMR_Reader_rev4.png)
+* [PCB design](Schematic_DSMR_Reader_rev4.png)
+* [Gerber file](Gerber_DSMR_Reader_rev4.zip) (can be used for ordering the PCB at for example JLCPCB)
+
 # Compatibility
 
 The device is directly powered by the smart meter. This has been tested with a DSMR v4.2 and a  DSMR v5.0 meter.
@@ -62,7 +68,7 @@ and a flash button (or you could for example use a jumper for the flash mode).
 
 # Prototype
 
-Before desiging the final board from above, I designed and built a prototype.
+Before designing the PCB, I designed and built a prototype.
 Here's what this one looked like:
 
 ![prototype](prototype.jpg)
