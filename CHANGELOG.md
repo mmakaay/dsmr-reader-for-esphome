@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-09-03
+
+* Swapped out the RJ12 connector part with another one, that has the soldering holes a bit closer to each other. With the original part, I had to bend the connector pins a bit to get them to fit in the holes.
+* Added a 100nF capacitor to the reset switch connector for debouncing button presses.
+* Rearranged the board to remove all components from under the ESP-01 MCU. This makes it easy to solder the ESP-01 directly onto the board if one desires to do so.
+* Made the mounting holes a bit bigger to allow the use of M3 screws.
+
 ## 2021-08-28
 
 * Changed the placement of the ESP-01, to bring the WiFi antenna to the outside of the board. Thanks to Frank Bakker on the ESPHome Discord for asking me why I hadn't done so. I had no answer to that :-)
