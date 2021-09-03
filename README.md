@@ -7,8 +7,8 @@ This device is compatible with the energy dashboard that was introduced in Home 
 
 # Files
 
-* [Schematic](PCB_DSMR_Reader_rev4.png)
-* [PCB design](Schematic_DSMR_Reader_rev4.png)
+* [Schematic](Schematic_DSMR_Reader_rev4.png)
+* [PCB design](PCB_DSMR_Reader_rev4.png)
 * [Gerber file](Gerber_DSMR_Reader_rev4.zip) (can be used for ordering the PCB at for example JLCPCB)
 
 # Compatibility
