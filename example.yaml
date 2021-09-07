@@ -38,12 +38,21 @@ dsmr:
 # Look at the ESPHome documentation for the dsmr component for more options:
 # https://esphome.io/components/sensor/dsmr.html
 
+# Until fixed in ESPHome, some entries will need an extra annotation:
+#  state_class: total_increasing
+#  device_class: gas
+# Otherwise they won't work together with Home Assistant's energy dashboard.
+# Release of the fix is ESPHome version 2021.9.0
+# See: https://github.com/esphome/issues/issues/2383
+
 sensor:
   - platform: dsmr
     energy_delivered_tariff1:
       name: DSMR Energy Consumed Tariff 1
+      state_class: total_increasing
     energy_delivered_tariff2:
       name: DSMR Energy Consumed Tariff 2
+      state_class: total_increasing
     power_delivered:
       name: DSMR Power Consumed
     electricity_failures:
@@ -54,6 +63,8 @@ sensor:
       name: DSMR Current Phase 1
     gas_delivered:
       name: DSMR Gas Consumed
+      device_class: gas
+      state_class: total_increasing
 
 text_sensor:
   - platform: dsmr
