@@ -3,9 +3,9 @@
 A smartmeter integration project, made for ESPHome (hardware + ESPHome config).
 This device can be used with the energy dashboard that was introduced in Home Assistant 2021.8.0.
 
-[![Made for ESPHome](https://esphome.io/_static/made-for-esphome-black-on-transparent.png)](https://esphome.io/guides/made_for_esphome.html)
+[<img alt="Made for ESPHome" src="https://esphome.io/_static/made-for-esphome-black-on-transparent.png" width="250">](https://esphome.io/guides/made_for_esphome.html)
 
-![connected](images/rev1_connected_to_meter.png)
+<img alt="Revision 1 hooked up" src="images/rev1_connected_to_meter.png" width="500">
 
 # Files
 
@@ -82,4 +82,4 @@ This page had a good collection of info about the P1 port:
 http://domoticx.com/p1-poort-slimme-meter-hardware/
 
 The nice folks on the ESPHome discord channel helped me with improving the
-design. Their names can be found in the [change log](CHANGELOG.md).
+design. Their names can be found in [CHANGELOG.md](CHANGELOG.md).
