@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-08
+
+* Added the new "Made for ESPHome" logo to the design and README.md.
+* Updated the project to change its name to "DSMR Reader for ESPHome".
+* Added the 3D printing STL files to the project.
+
 ## 2021-09-03
 
 * Swapped out the RJ12 connector part with another one, that has the soldering holes a bit closer to each other. With the original part, I had to bend the connector pins a bit to get them to fit in the holes.

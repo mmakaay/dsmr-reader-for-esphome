@@ -1,15 +1,17 @@
-# An ESPHome DSMR smart meter reader
+# DSMR Reader for ESPHome
 
-An ESPHome smartmeter project (hardware + ESPHome config).
-This device is compatible with the energy dashboard that was introduced in Home Assistant 2021.8.0.
+A smartmeter integration project, made for ESPHome (hardware + ESPHome config).
+This device can be used with the energy dashboard that was introduced in Home Assistant 2021.8.0.
 
-![connected](connected_to_meter.png)
+[![Made for ESPHome](https://esphome.io/_static/made-for-esphome-black-on-transparent.png)](https://esphome.io/guides/made_for_esphome.html)
+
+![connected](images/rev1_connected_to_meter.png)
 
 # Files
 
-* [Schematic](PCB_DSMR_Reader_rev4.png)
-* [PCB design](Schematic_DSMR_Reader_rev4.png)
-* [Gerber file](Gerber_DSMR_Reader_rev4.zip) (can be used for ordering the PCB at for example JLCPCB)
+* [Schematic](PCB/schematic.png)
+* [PCB design](PCB/design.png)
+* [Gerber file](PCB/gerber.zip) (can be used for ordering the PCB at for example JLCPCB)
 
 # Compatibility
 
@@ -36,9 +38,6 @@ Please let me know if you find additional compatibility outcomes.
 * 1 x Transistor 2N2222 TO92
 * 1 x Male-male RJ12 cable, to connect the device to the smart meter
 
-Note: instead of 1206, you might also use 0805.
-The 1206 version is a bit less fiddly to solder by hand.
-
 ### For DSMR v4 only
 
 For DSMR v4, a 1000uF capacitor is required to handle the startup peak.
@@ -64,14 +63,15 @@ then you can install a 6-pin header to the board.
 Because GND, 3V3, RXD and TXD are exposed from the breakout pins, it is feasible
 to flash the ESP-01 while it is installed on the board.
 To be able to get the ESP-01 into flashing mode easily, you can install a reset
-and a flash button (or you could for example use a jumper for the flash mode).
+and a flash button on respectively the "RST" and "FL" pins (or you could for
+example use a jumper for activating the flash mode).
 
 # Prototype
 
 Before designing the PCB, I designed and built a prototype.
 Here's what this one looked like:
 
-![prototype](prototype.jpg)
+![prototype](images/rev0_prototype.jpg)
 
 # Credits
 
@@ -81,3 +81,5 @@ https://klushok.etv.tudelft.nl/projects/view?id=8
 This page had a good collection of info about the P1 port:
 http://domoticx.com/p1-poort-slimme-meter-hardware/
 
+The nice folks on the ESPHome discord channel helped me with improving the
+design. Their names can be found in the [change log](CHANGELOG.md).
