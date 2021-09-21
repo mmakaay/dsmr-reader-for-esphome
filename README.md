@@ -78,6 +78,9 @@ Here's what this one looked like:
 The circuit that I used as a starting point for my board:
 https://klushok.etv.tudelft.nl/projects/view?id=8
 
+This one got some nice ideas too:
+https://willem.aandewiel.nl/index.php/2019/04/09/dsmr-logger-v4-slimme-meter-uitlezer/
+
 This page had a good collection of info about the P1 port:
 http://domoticx.com/p1-poort-slimme-meter-hardware/
 
