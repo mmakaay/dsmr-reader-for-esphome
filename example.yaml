@@ -1,7 +1,11 @@
+substitutions:
+  name: dsmr-reader
+  friendly_name: DSMR Reader
+
 esphome:
-  name: smartmeter
+  name: ${name}
   platform: ESP8266
-  board: esp01_1m
+  board: d1_mini
 
 wifi:
   ssid: !secret wifi_ssid
@@ -13,53 +17,84 @@ api:
 ota:
   password: !secret ota_password
 
-# Baud rate 0 disables the serial logging, which is required to prevent
-# conflicts with the serial communication of the uart component.
 logger:
+  # Serial logging is disabled by setting the logger baud rate to 0.
+  # Otherwise the logger will occupy the hardware UART, making it unavailable
+  # for receiving smart meter data on pin D7 (GPIO13).
   baud_rate: 0
   level: VERBOSE
   
 uart:
-  rx_pin: GPIO3
+  rx_pin: D7
   baud_rate: 115200
+  rx_buffer_size: 1500
 
 dsmr:
-
-# The following are the sensors that I use.
-# Look at the ESPHome documentation for the dsmr component for more options:
-# https://esphome.io/components/sensor/dsmr.html
-
-# Until fixed in ESPHome, some entries will need an extra annotation:
-#  state_class: total_increasing
-#  device_class: gas
-# Otherwise they won't work together with Home Assistant's energy dashboard.
-# Release of the fix is ESPHome version 2021.9.0
-# See: https://github.com/esphome/issues/issues/2383
 
 sensor:
   - platform: dsmr
     energy_delivered_tariff1:
-      name: DSMR Energy Consumed Tariff 1
+      name: ${friendly_name} Energy Delivered Tariff 1
       state_class: total_increasing
     energy_delivered_tariff2:
-      name: DSMR Energy Consumed Tariff 2
+      name: ${friendly_name} Energy Delivered Tariff 2
       state_class: total_increasing
+    energy_returned_tariff1:
+      name: ${friendly_name} Energy Returned Tariff 1
+    energy_returned_tariff2:
+      name: ${friendly_name} Energy Returned Tariff 2
     power_delivered:
-      name: DSMR Power Consumed
+      name: ${friendly_name} Power Consumed
+    power_returned:
+      name: ${friendly_name} Power Returned
     electricity_failures:
-      name: DSMR Electricity Failures
+      name: ${friendly_name} Electricity Failures
     electricity_long_failures:
-      name: DSMR Electricity Long Failures
+      name: ${friendly_name} Electricity Long Failures
+    voltage_l1:
+      name: ${friendly_name} Voltage L1
+    voltage_l2:
+      name: ${friendly_name} Voltage L2
+    voltage_l3:
+      name: ${friendly_name} Voltage L3
     current_l1:
-      name: DSMR Current Phase 1
+      name: ${friendly_name} Current L1
+    current_l2:
+      name: ${friendly_name} Current L2
+    current_l3:
+      name: ${friendly_name} Current L3
+    power_delivered_l1:
+      name: ${friendly_name} Power Delivered L1
+    power_delivered_l2:
+      name: ${friendly_name} Power Delivered L2
+    power_delivered_l3:
+      name: ${friendly_name} Power Delivered L3
+    power_returned_l1:
+      name: ${friendly_name} Power Returned L1
+    power_returned_l2:
+      name: ${friendly_name} Power Returned L2
+    power_returned_l3:
+      name: ${friendly_name} Power Returned L3
     gas_delivered:
-      name: DSMR Gas Consumed
-      device_class: gas
-      state_class: total_increasing
-
+      name: ${friendly_name} Gas Delivered
+    
+    # Belgium
+    #gas_delivered_be:
+    #  name: ${friendly_name} Gas Delivered BE
+    
+    # Luxembourg
+    #energy_delivered_lux:
+    #  name: ${friendly_name} Energy Delivered Lux
+    #energy_returned_lux:
+    #  name: ${friendly_name} Energy Returned Lux
+    
 text_sensor:
   - platform: dsmr
     identification:
-      name: "DSMR Identification"
+      name: ${friendly_name} Identification
     p1_version:
-      name: "DSMR Version"
+      name: ${friendly_name} Version
+
+    # Belgium
+    #p1_version_be:
+    #  name: ${friendly_name} Version BE
