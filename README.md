@@ -13,7 +13,7 @@ The goal of the project is to provide an open source design for an easy to build
 
 * [Schematic](PCB/schematic.png)
 * [PCB design](PCB/design.png)
-* [Gerber file](PCB/gerber.zip) (can be used for ordering the PCB at for example JLCPCB)
+* [Gerber file](PCB/schematic.zip) (can be used for ordering the PCB at for example JLCPCB)
 * [ESPHome example configuration](example.yaml)
 
 # Compatibility
