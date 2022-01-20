@@ -30,7 +30,9 @@ uart:
   rx_buffer_size: 1500
 
 dsmr:
-
+  request_pin: D5
+  request_interval: 10s
+  
 sensor:
   - platform: dsmr
     energy_delivered_tariff1:
