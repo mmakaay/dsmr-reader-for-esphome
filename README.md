@@ -21,7 +21,7 @@ The goal of the project is to provide an open source design for an easy to build
 The device can be directly powered by the smart meter. This has been tested with DSMR v4 and DSMR v5 meters.
 
 I have a **DSMR v4.2** meter myself, which delivers enough current to power the ESP8266 D1 Mini.
-It does require a 1000 uF capacitor though, to handle the power peaks of the ESP-01 during startup and
+It does require a 1000 uF capacitor though, to handle the power peaks of the D1 Mini during startup and
 connecting to the WiFi network.
 
 There are also DSMR v4 meters that don't deliver enough current to run the device. For those meters and
@@ -43,6 +43,7 @@ Please let me know if you find additional compatibility outcomes.
 * 2 x 8 pin female header (for connecting the D1 mini)
 * 2 x 2 pin male header
 * 2 x header jumper (fits over the 2 pin male header)
+* 1 x RJ12 to RJ12 cable (straight)
 
 **Optionally, for connecting an OLED display**
 
