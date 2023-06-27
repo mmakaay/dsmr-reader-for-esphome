@@ -29,9 +29,9 @@ for earlier DSMR versions, it is possible to power the D1 Mini using an external
 
 Please let me know if you find additional compatibility outcomes.
  
-# (*)Note on v4.2 without using an external power supply
+# (*)Note on DSMR v4.2 without using an external power supply
 
-The ESP8266 D1 Mini boards have short term power peaks while connecting to wifi or transmitting over wifi. With low wifi reception the peak draw can be up to 250 mA for 5-15 milisecond. This is exceeding the P1 port electrical specification by far. The P1 port is current (up to 100 mA) AND voltage regulated (5V). In such cases the output voltage of the ESP8266 D1 Mini on board power regulator will drop and result in a reboot. This will happen over and over again. Increasing the capacity of the capacitor significantly can help to overcome this.
+The ESP8266 D1 Mini boards have short term power peaks while connecting to wifi or transmitting over wifi. With low wifi reception the peak draw can be up to 250 mA for 5-15 milisecond. This is exceeding the DSMR v4 P1 port electrical specification by far. The P1 port is current (up to 100 mA) AND voltage regulated (5V). In such cases the output voltage of the ESP8266 D1 Mini on board power regulator will drop and result in a reboot. This will happen over and over again. Increasing the capacity of the capacitor significantly can help to overcome this.
 Two small 6.3V 3300uF mounted in parallel instead of the 1000uF in the schematics has been implemented succesfully.
 These capacitors are available in Ø 10mm x 25mm and the 1000uF capacitor in the schematics can directly be substituded. The second 3300uF capacitor can be mounted piggy-back on the other side of the PCB. The PCB does not have to be altered for this, however it will not fit the current enclosure.
 
