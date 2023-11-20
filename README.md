@@ -33,7 +33,7 @@ Please let me know if you find additional compatibility outcomes.
 
 * 1 x DSMR Reader PCB (can be ordered from a manufacturer like JLCPCB using the Geber file)
 * 3 x Resistor 1 kOhm
-* 1 x Resistor 300 Ohm
+* 1 x Resistor 200 Ohm
 * 1 x Resistor 100 Ohm
 * 1 x Transistor 2N2222 TO92
 * 1 x Optocoupler 4N35
@@ -62,5 +62,7 @@ https://willem.aandewiel.nl/index.php/2019/04/09/dsmr-logger-v4-slimme-meter-uit
 This page had a good collection of info about the P1 port:
 http://domoticx.com/p1-poort-slimme-meter-hardware/
 
-Some nice folks on the ESPHome discord channel helped me with improving the
-design. In alphabetical order: Azimath, Frank Bakker, Jos, stoic
+Some nice folks that helped me improving the design:
+- from the ESPHome discord channel, in alphabetical order:
+  Azimath, Frank Bakker, Jos, stoic
+- Zoltán Komló

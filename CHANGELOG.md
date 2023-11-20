@@ -1,5 +1,14 @@
 # Changelog
 
+## 2023-11-20
+
+* Replaced the 330 Ohm resistor (used as ballast resistor for the optocoupler
+  LED) with a 200 Ohm resistor. The initial resistance calculation was based
+  on a 5V input, overlooking the fact that the D1 Mini pins output at 3.3V.
+  Special thanks to Zoltán Komló for discovering and troubleshooting the issue
+  and for proposing the solution.
+
+
 ## 2021-11-06
 
 * Initial release of my DSMR reader for ESPHome, based on the ESP8266 D1 Mini.
@@ -17,4 +26,3 @@
   processing of the telegram. This is especially useful for those meters that are transmitting data
   every second as long as the request pin is high.
 * Optionally, a header can be added for connecting an I2C OLED display.
-
