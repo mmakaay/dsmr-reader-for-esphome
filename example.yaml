@@ -16,7 +16,8 @@ api:
     key: !secret api_encryption_key
 
 ota:
-  password: !secret ota_password
+  - platform: esphome
+    password: !secret ota_password
 
 logger:
   # Serial logging is disabled by setting the logger baud rate to 0.
